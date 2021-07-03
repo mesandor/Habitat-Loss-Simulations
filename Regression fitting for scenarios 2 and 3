@@ -12,7 +12,7 @@ AreaRemainmat[i,] <- AreaRemainmat[1,]
 }
 StartConnectmat <- matrix(StartConnectTot, nr=18410, nc=12)
 StepConnectmat <- matrix(StepConnectTot, nr=18410, nc=12)
-TotalSppmat <- matrix(TotalSppTot, nr=18410, nc=12) #this is counting down too...
+TotalSppmat <- matrix(TotalSppTot, nr=18410, nc=12) 
 zDiffmat <- matrix(zDiffTot, nr=18410, nc=12)
 reduce <- sample(1:12, 18410, replace=TRUE)
 
