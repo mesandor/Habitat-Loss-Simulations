@@ -11,7 +11,7 @@
 # Data files associated with Scenario 1 code:
 # BirdNames.csv
 # BirdsGridsJoin.csv.zip: Large file, must be unzipped before using. 
-# FullNetworkpresabs.csv
+# FullNetworkpresabs.csv: Full bipartite network for frugivorous birds and fruit-producing shrubs and small trees in the Sierra Nevada Mountains, California, USA. A "1" indicates that the given bird species (column) interacts with the given plant species (row). Bird species are listed by their standardized four-letter codes (https://www.birdpop.org/docs/misc/Alpha_codes_eng.pdf). Please species are listed by the first three letters of their genus name combined with the first three letters of their species name (e.g. Amealn is Amelanchier alnifolia). The full list of plant species with their scientific names can be found in Sandor et al. (in revision) Appendix S1, Table S1. The full list of bird species and associated scientific names can be found in Sandor et al. (in revision) Appendix S1, Table S2.
 # GridPathForAnalysis.csv
 # PlantNames.csv
 # PlantsGridsJoin.csv
