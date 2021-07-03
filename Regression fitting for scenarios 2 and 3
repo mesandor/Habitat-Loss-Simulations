@@ -1,0 +1,71 @@
+#Bernoulli analysis
+y <- OrphanedTot 
+
+#start the model here
+#start the clock
+ptm <- proc.time()
+Pred <- function(){
+
+#priors
+a0 ~ dnorm(0, 0.001)
+a1 ~ dnorm(0, 0.001)
+a2 ~ dnorm(0, 0.001)
+a3 ~ dnorm(0, 0.001)
+a4 ~ dnorm(0, 0.001)
+
+for(i in 1:M){
+y[i] ~ dbern(lambda[i])
+logit(lambda[i]) <- a0 + a1*zDiffTotCent[i] + a2*StartConnectTotCent[i] + a3*AreaLostTotCent[i] + a4*TotalSppTotCent[i]
+}
+}
+
+if(is.R()){
+filename <- file.path(tempdir(), "Pred.bug")}
+write.model(Pred, filename)
+
+inits <- list(list(a0=-1, a1=-1, a2=-1, a3=-1, a4=-1), list(a0=0, a1=0, a2=0, a3=0, a4=0), list(a0=1, a1=1, a2=1, a3=1, a4=1))
+data <- list("y", "zDiffTotCent", "StartConnectTotCent", "AreaLostTotCent", "TotalSppTotCent", "M") 
+parameters <- c("a0", "a1", "a2", "a3", "a4") 
+Pred <- jags(data=data, inits = inits, parameters.to.save=parameters, filename, n.burnin=75000, n.iter=100000, n.thin=1, n.chains=3) 
+# Stop the clock
+proc.time() - ptm 
+
+print(Pred) #check Rhat
+
+
+
+
+#Poisson analysis
+y <- OrphanedNZ
+P <- length(OrphanedNZ)
+
+#start the model here
+#start the clock
+ptm <- proc.time()
+Pred <- function(){
+
+#priors
+a0 ~ dnorm(0, 0.001)
+a1 ~ dnorm(0, 0.001)
+a2 ~ dnorm(0, 0.001)
+a3 ~ dnorm(0, 0.001)
+a4 ~ dnorm(0, 0.001)
+
+for(i in 1:P){
+y[i] ~ dpois(lambda[i])
+log(lambda[i]) <- a0 + a1*zDiffNZCent[i] + a2*StepConnectNZCent[i] + a3*AreaLostNZCent[i] + a4*TotalSppNZCent[i] 
+}
+}
+
+if(is.R()){
+filename <- file.path(tempdir(), "Pred.bug")}
+write.model(Pred, filename)
+
+inits <- list(list(a0=-1, a1=-1, a2=-1, a3=-1, a4=-1), list(a0=0, a1=0, a2=0, a3=0, a4=0), list(a0=1, a1=1, a2=1, a3=1, a4=1)) #, a5=-1, a5=0, a5=1
+data <- list("y", "zDiffNZCent", "StepConnectNZCent", "AreaLostNZCent", "TotalSppNZCent", "P") 
+parameters <- c("a0", "a1", "a2", "a3", "a4") #, "a5"
+Pred <- jags(data=data, inits = inits, parameters.to.save=parameters, filename, n.burnin=75000, n.iter=100000, n.thin=1, n.chains=3) 
+# Stop the clock
+proc.time() - ptm 
+
+print(Pred) #check Rhat
