@@ -8,4 +8,10 @@
 
 # Please note that there are stochastic elements to scenarios 2 and 3 and simply running "Scenario 2" and "Scenario 3" code will not produce identical results to those presented in the paper.
 
-# Associated data files:
+# Data files associated with Scenario 1 code:
+# BirdNames.csv
+# BirdsGridsJoin.csv.zip: Large file, must be unzipped before using. 
+# FullNetworkpresabs.csv
+# GridPathForAnalysis.csv
+# PlantNames.csv
+# PlantsGridsJoin.csv
