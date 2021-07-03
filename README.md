@@ -30,3 +30,6 @@ Input data are not needed for running scenarios 2 and 3.
 
 Input data for "Regression fitting for scenarios 2 and 3":
 
+"Scenario_2_Workspace": All the R objects needed for running the Bernoulli and Poisson regression analyses for scenario 2.
+
+"Scenario_3_Workspace": All the R objects needed for running the Bernoulli and Poisson regression analyses for scenario 2.
