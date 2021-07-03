@@ -26,3 +26,7 @@ PlantsGridsJoin.csv: Large file. All plant occurrences pulled from the Global Bi
 
 
 Input data are not needed for running scenarios 2 and 3.
+
+
+Input data for "Regression fitting for scenarios 2 and 3":
+
