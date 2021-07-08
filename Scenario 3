@@ -260,14 +260,14 @@ Connectance[,1] <- Connect2
 Viable3 <- Viable1+Viable2
 
 #About 97% of the networks are viable - remove any that are not
-DetachedP <- DetachedP[which(Viable3==2),]
-DetachedA <- DetachedA[which(Viable3==2),]
-Connectance <- Connectance[which(Viable3==2),] 
-zdiff <- zdiff[which(Viable3==2)]
-RemainP <- RemainP[which(Viable3==2),]
-RemainA <- RemainA[which(Viable3==2),]
-zP <- zP[which(Viable3==2)]
-zA <- zA[which(Viable3==2)]
+DetachedP400 <- DetachedP[which(Viable3==2),]
+DetachedA400 <- DetachedA[which(Viable3==2),]
+Connectance400 <- Connectance[which(Viable3==2),] 
+zdiff400 <- zdiff[which(Viable3==2)]
+RemainP400 <- RemainP[which(Viable3==2),]
+RemainA400 <- RemainA[which(Viable3==2),]
+zP400 <- zP[which(Viable3==2)]
+zA400 <- zA[which(Viable3==2)]
 
 
 ##### For 100 km^2 area loss #####
@@ -492,14 +492,14 @@ Connectance[,1] <- Connect2
 Viable3 <- Viable1+Viable2
 
 #About 97% of the networks are viable - remove any that are not
-DetachedP <- DetachedP[which(Viable3==2),]
-DetachedA <- DetachedA[which(Viable3==2),]
-Connectance <- Connectance[which(Viable3==2),] 
-zdiff <- zdiff[which(Viable3==2)]
-RemainP <- RemainP[which(Viable3==2),]
-RemainA <- RemainA[which(Viable3==2),]
-zP <- zP[which(Viable3==2)]
-zA <- zA[which(Viable3==2)]
+DetachedP100 <- DetachedP[which(Viable3==2),]
+DetachedA100 <- DetachedA[which(Viable3==2),]
+Connectance100 <- Connectance[which(Viable3==2),] 
+zdiff100 <- zdiff[which(Viable3==2)]
+RemainP100 <- RemainP[which(Viable3==2),]
+RemainA100 <- RemainA[which(Viable3==2),]
+zP100 <- zP[which(Viable3==2)]
+zA100 <- zA[which(Viable3==2)]
 
 
 ##### For 25 km^2 area loss #####
@@ -724,14 +724,14 @@ Connectance[,1] <- Connect2
 Viable3 <- Viable1+Viable2
 
 #About 97% of the networks are viable - remove any that are not
-DetachedP <- DetachedP[which(Viable3==2),]
-DetachedA <- DetachedA[which(Viable3==2),]
-Connectance <- Connectance[which(Viable3==2),] 
-zdiff <- zdiff[which(Viable3==2)]
-RemainP <- RemainP[which(Viable3==2),]
-RemainA <- RemainA[which(Viable3==2),]
-zP <- zP[which(Viable3==2)]
-zA <- zA[which(Viable3==2)]
+DetachedP25 <- DetachedP[which(Viable3==2),]
+DetachedA25 <- DetachedA[which(Viable3==2),]
+Connectance25 <- Connectance[which(Viable3==2),] 
+zdiff25 <- zdiff[which(Viable3==2)]
+RemainP25 <- RemainP[which(Viable3==2),]
+RemainA25 <- RemainA[which(Viable3==2),]
+zP25 <- zP[which(Viable3==2)]
+zA25 <- zA[which(Viable3==2)]
 
 
 ##### For 16 km^2 area loss #####
@@ -956,14 +956,14 @@ Connectance[,1] <- Connect2
 Viable3 <- Viable1+Viable2
 
 #About 97% of the networks are viable - remove any that are not
-DetachedP <- DetachedP[which(Viable3==2),]
-DetachedA <- DetachedA[which(Viable3==2),]
-Connectance <- Connectance[which(Viable3==2),] 
-zdiff <- zdiff[which(Viable3==2)]
-RemainP <- RemainP[which(Viable3==2),]
-RemainA <- RemainA[which(Viable3==2),]
-zP <- zP[which(Viable3==2)]
-zA <- zA[which(Viable3==2)]
+DetachedP16 <- DetachedP[which(Viable3==2),]
+DetachedA16 <- DetachedA[which(Viable3==2),]
+Connectance16 <- Connectance[which(Viable3==2),] 
+zdiff16 <- zdiff[which(Viable3==2)]
+RemainP16 <- RemainP[which(Viable3==2),]
+RemainA16 <- RemainA[which(Viable3==2),]
+zP16 <- zP[which(Viable3==2)]
+zA16 <- zA[which(Viable3==2)]
 
 
 ##### For 6.25 km^2 area loss #####
@@ -1188,11 +1188,11 @@ Connectance[,1] <- Connect2
 Viable3 <- Viable1+Viable2
 
 #About 97% of the networks are viable - remove any that are not
-DetachedP <- DetachedP[which(Viable3==2),]
-DetachedA <- DetachedA[which(Viable3==2),]
-Connectance <- Connectance[which(Viable3==2),] 
-zdiff <- zdiff[which(Viable3==2)]
-RemainP <- RemainP[which(Viable3==2),]
-RemainA <- RemainA[which(Viable3==2),]
-zP <- zP[which(Viable3==2)]
-zA <- zA[which(Viable3==2)]
+DetachedP6 <- DetachedP[which(Viable3==2),]
+DetachedA6 <- DetachedA[which(Viable3==2),]
+Connectance6 <- Connectance[which(Viable3==2),] 
+zdiff6 <- zdiff[which(Viable3==2)]
+RemainP6 <- RemainP[which(Viable3==2),]
+RemainA6 <- RemainA[which(Viable3==2),]
+zP6 <- zP[which(Viable3==2)]
+zA6 <- zA[which(Viable3==2)]
