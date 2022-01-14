@@ -1,6 +1,6 @@
 # Habitat-Loss-Simulations
 
-Code and associated data files for the simulations and analyses presented in Sandor et al. (in revision) Extinction of biotic interactions due to habitat loss could accelerate the current biodiversity crisis
+Code and associated data files for the simulations and analyses presented in Sandor et al. (accepted) Extinction of biotic interactions due to habitat loss could accelerate the current biodiversity crisis
 
 "Scenario 1" is the code used for the habitat loss simulation for the exponential area loss in an empirical network scenario (scenario 1).
 "Scenario 2" is the code used for the habitat loss simulation for the exponential area loss in synthetic networks scenario (scenario 2).
